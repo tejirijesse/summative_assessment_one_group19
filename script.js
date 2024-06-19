@@ -23,6 +23,8 @@ document.getElementById('registrationForm').addEventListener('submit', function(
     }
 
     if (!phonePattern.test(phone)) {
+        console.log('Phone number does not match the pattern.');
+        console.log(`Entered phone number: ${phone}`);
         alert('Please enter a valid phone number in the format (123) 456-7890.');
         return;
     }
